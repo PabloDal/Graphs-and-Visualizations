@@ -1,0 +1,11 @@
+jet=plt.get_cmap('coolwarm')
+
+x = 
+y = 
+z = 
+
+plt.scatter(x, y, s=100, c=z, cmap=jet)
+
+plt.clim(,)
+plt.colorbar()
+plt.show()
