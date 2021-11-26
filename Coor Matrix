@@ -1,0 +1,10 @@
+import matplotlib.pyplot as plt
+
+def coor_matrix(data):
+  f = plt.figure(figsize=(10, 8))
+  plt.matshow(data.corr(), fignum=f.number)
+  plt.xticks(range(data.select_dtypes(['number']).shape[1]), data.select_dtypes(['number']).columns, fontsize=14, rotation=45)
+  plt.yticks(range(data.select_dtypes(['number']).shape[1]), data.select_dtypes(['number']).columns, fontsize=14)
+  cb = plt.colorbar()
+  cb.ax.tick_params(labelsize=14)
+  plt.title('Correlation Matrix', fontsize=16);
