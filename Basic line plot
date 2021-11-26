@@ -1,3 +1,5 @@
+import matplotlib.pyplot as plt
+
 def line(x, y, xlabel, ylabel, title):
     fig, ax = plt.subplots(figsize=(14, 4))
     ax.xaxis.set_major_locator(plt.MaxNLocator(5))
