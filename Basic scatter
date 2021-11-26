@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+
+def scatter(x, y, xlabel, ylabel, title):
+    fig, ax = plt.subplots()
+    ax.xaxis.set_major_locator(plt.MaxNLocator(5))
+    ax.scatter(x, y)
+    ax.set(xlabel=xlabel, ylabel=ylabel, title=title)
+    ax.grid()
+    plt.show()
