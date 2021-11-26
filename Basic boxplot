@@ -1,0 +1,5 @@
+import seaborn as sns
+
+def boxplot(data):
+    sns.set_theme(style="whitegrid")
+    ax = sns.boxplot(data=data, orient="h", palette="Set2")
